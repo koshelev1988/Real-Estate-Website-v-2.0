@@ -1,0 +1,34 @@
+@import "params/variables";
+@import "params/mixins";
+
+.slider-wrapper {
+	position: relative;
+	padding-bottom: $font-size-30px;
+}
+.slider {
+	border: $font-size-10px solid $color-white;
+
+	& .meta {
+		background: #1a425a;
+		border-top: .1rem solid #4b7eb3;
+		display: block;
+		padding: 1em $font-size-30px;
+		& .desc {
+			font-size: $font-size-20px;
+		}
+		& .slogan {
+			display: block;
+			font-size: $font-size-14px;
+			font-weight: 300;
+			line-height: 1.3;
+		}
+	}
+}
+.owl-carousel {
+	& .owl-dots {
+		left: 0;
+		right: 0;
+		bottom:$font-size--50px;
+		position: absolute;
+	}
+}

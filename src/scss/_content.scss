@@ -1,0 +1,36 @@
+@import "params/variables";
+@import "params/mixins";
+
+.content {
+	padding: $font-size-20px 0 $font-size-12px;
+	& .product {
+		padding-bottom: $font-size-20px;
+		& img {
+			border: $font-size-8px solid #e1dede;
+		}
+		& .btn {
+			display: flex;
+			background: #4f8fb7;
+			padding: $font-size-8px;
+			-webkit-border-radius: 0 0 .5rem .5rem;
+			-moz-border-radius: 0 0 .5rem .5rem;
+			border-radius: 0 0 .5rem .5rem;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			justify-content: center;
+			& span {
+				color: $color-white;
+			}
+			& .text {
+				font-size: 1.03125em;
+				line-height: 1.515151515151515em;
+			}
+			& .button-icon {
+				font-size: $font-size-34px;
+				align-self: center;
+				margin-left: 10px;
+			}
+		}
+	}
+}

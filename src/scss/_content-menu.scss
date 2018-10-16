@@ -1,0 +1,12 @@
+@import "params/variables";
+@import "params/mixins";
+
+.content-menu-wrapper {
+	background: linear-gradient(to right, #c5deea 0%, #8abbd7 31%, #066dab 100%);
+	padding: $font-size-20px 0;
+
+}
+.content-menu {
+	@import "slider";
+	@import "tab";
+}

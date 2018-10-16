@@ -1,0 +1,91 @@
+@import "params/variables";
+@import "params/mixins";
+
+@import url(//db.onlinewebfonts.com/c/2ecbfe1d9bfc191c6f15c0ccc23cbd43?family=FangSong);
+@import url(//db.onlinewebfonts.com/c/58448bc8344e86403c7ad25b3509965f?family=Microsoft+New+Tai+Lue);
+@import url(//db.onlinewebfonts.com/c/5969c0e125317a0eb59c7dd9c22d1e06?family=Microsoft+Sans+Serif);
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+
+html {
+	font-size: 10px;
+}
+
+body {
+	background: $color-white;
+	color: $color-white;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	min-width: 32rem;
+}
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	color: $color-white;
+}
+img {
+	width: 100%;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+.logo {
+	padding-bottom: $font-size-20px;
+	width: $width-320px;
+	position: relative;
+	& img {
+		width: $font-size-48px;
+		height: $font-size-50px;
+	}
+	& .title {
+		display: inline-flex;
+		flex-direction: column;
+		width: $width-320px;
+		top: $font-size-22px;
+		left: $font-size-28px;
+		position: absolute;
+		& .name {
+			font-family: "FangSong", sans-serif;
+			font-size: $font-size-28px;
+		}
+		& .slogan {
+			font-family: "Microsoft New Tai Lue", sans-serif;
+		}
+	}
+}
+.header .contacts,
+.menu {
+	font-family: "Microsoft Sans Serif",sans-serif;
+}
+.button {
+	background: linear-gradient(160deg, #c5deea 0%, #8abbd7 31%, #066dab 100%);
+	border: 0.13636363636363636363636363636364em solid $color-white;
+	-webkit-border-radius: $font-size-6px;
+	-moz-border-radius: $font-size-6px;
+	border-radius: $font-size-6px;
+	color: $color-white;
+	cursor: pointer;
+	font-size: $font-size-22px;
+	margin-top: $font-size-18px;
+	padding: 0.45454545454545454545454545454545em 2.3333333333333em;
+}
+.all {
+	width: 100%;
+	max-width: 128rem;
+	margin: 0 auto;
+	@import "header";
+	@import "menu";
+	@import "content-menu";
+	@import "top-home";
+	@import "content";
+	@import "registration";
+	@import "footer";
+}

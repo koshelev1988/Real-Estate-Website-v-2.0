@@ -1,0 +1,94 @@
+@import "params/smart-grid";
+.container {
+	@include wrapper();
+}
+.row {
+	@include row-flex();
+	justify-content: center;
+}
+.header {
+	& .logo, & .contacts {
+		@include col();
+	}
+}
+.menu {
+	& .menu-ul, & .buttons, & .hamburger {
+		@include col();
+	}
+}
+.slider-wrapper {
+	@include col();
+	@include size(7);
+	@include size-sm(12)
+}
+.tab-content-wrapper {
+	@include col();
+	@include size(5);
+	@include size-sm(12)
+}
+.home {
+	@include col();
+	@include size(4);
+	@include size-xs(12);
+}
+.product {
+	@include col();
+	@include size(3);
+	@include size-sm(6);
+	@include size-xs(12);
+}
+.login {
+	@include col();
+	@include size(6);
+	@include size-sm(12);
+	& .login-name, .password {
+		//@include col();
+		//@include size(4);
+
+	}
+	& .btn-form {
+		//@include col();
+		//@include size(4);
+
+	}
+}
+.email {
+	@include col();
+	@include size(6);
+	@include size-sm(12);
+	& .address {
+		//@include col();
+		//@include size(8);
+	}
+	& .btn-form {
+		//@include col();
+		//@include size(4);
+	}
+}
+.social-btn {
+	@include col();
+	@include size(6);
+	@include size-sm(12);
+}
+.social {
+	@include col();
+	@include size(6);
+	@include size-sm(12);
+}
+.desc {
+	@include col();
+	@include size(2);
+	@include size-sm(6);
+}
+.costamer {
+	@include col();
+	@include size(5);
+	@include size-sm(6);
+	@include size-xs(12);
+}
+.logo {
+	@include col();
+	@include size(3);
+	@include size-sm(6);
+	@include size-xs(12);
+}

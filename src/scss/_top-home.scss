@@ -1,0 +1,24 @@
+@import "params/variables";
+@import "params/mixins";
+.top-home {
+	background: linear-gradient(360deg, rgba(196,243,238,1) 0%, rgba(235,254,252,1) 100%);
+	padding: 1em 0;
+	& .home {
+		max-width: 20.285714285714285714285714285714em;
+		& .icon, & span {
+			color: #4b7eb3;
+		}
+		& .icon {
+			font-size: $font-size-30px;
+			margin-right: .5rem
+		}
+		& span {
+			font-size: $font-size-22px;
+		}
+		& p {
+			color: $color-black;
+			font-size: $font-size-14px;
+
+		}
+	}
+}

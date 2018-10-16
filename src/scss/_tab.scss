@@ -1,0 +1,82 @@
+@import "params/variables";
+@import "params/mixins";
+
+.tab-content {
+}
+.tabs  {
+	display: flex;
+	flex-direction: row;
+	& .tab {
+		background: #c2f2ed;
+		border-radius: $font-size-10px $font-size-10px 0 0;
+		color: $color-black;
+		font-size: $font-size-22px;
+		padding: 0.727272727272727em 0.9090909090909091em;
+		margin-right: 0.4545454545454545em;
+		&.active {
+			background: linear-gradient(to right, #c5deea 0%,#8abbd7 0%,#066dab 100%);
+			color: $color-white;
+		}
+	}
+}
+& .tab_content {
+	& .tab_item {
+		background: linear-gradient(to right, #c5deea 0%, #8abbd7 0%, #066dab 100%);
+		width: 100%;
+		max-width: 26.25em;
+		padding: $font-size-24px $font-size-40px ;
+		& p {
+			margin-top: 0;
+		}
+		& form {
+			& input[type="text"],
+			input[type="checkbox"],
+			select {
+				margin-bottom: 1em;
+			}
+			& input[type="text"] {
+				border: 0.125em solid #316e94;
+				-webkit-border-radius: $font-size-10px;
+				-moz-border-radius: $font-size-10px;
+				border-radius: $font-size-10px;
+				width: 100%;
+				max-width: 21.25em;
+				outline: none;
+			}
+			& input[type="text"], select {
+				padding: $font-size-10px 1em 0.5625em;
+			}
+			& input[type="checkbox"] {
+				margin-right: 1em;
+				padding: $font-size-6px;
+			}
+			& span {
+				padding-bottom: 1em;
+			}
+
+			& .bedrooms-wrap {
+			}
+			& .property-wrap, & .bedrooms-wrap {
+				display: flex;
+				justify-content: flex-end;
+				& select {
+					padding: $font-size-10px 1em 0.5625em;
+					-webkit-border-radius: $font-size-6px;
+					-moz-border-radius: $font-size-6px;
+					border-radius: $font-size-6px;
+					width: 100%;
+					max-width: 10.5em;
+					outline: none;
+					margin-left: $font-size-8px;
+				}
+			}
+			& .btn-wrap {
+				display: flex;
+				flex-direction: row-reverse;
+				& .button {
+
+				}
+			}
+		}
+	}
+}

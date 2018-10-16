@@ -1,0 +1,33 @@
+@import "params/variables";
+@import "params/mixins";
+
+.social-btn {
+	font-size: $font-size-22px;
+	display: flex;
+	justify-content: space-between;
+	& .btn {
+		&-left, &-right {
+			border: .1rem solid $color-white;
+			-webkit-border-radius: 0.3636363636363636em;
+			-moz-border-radius: 0.3636363636363636em;
+			border-radius: 0.3636363636363636em;
+			display: inline-block;
+			padding: 0.7272727272727273em 0.7272727272727273em;
+		}
+		&-left {
+			background: linear-gradient(160deg, #c5deea 0%, #8abbd7 31%, #066dab 100%);
+		}
+		&-right {
+			background: linear-gradient(top, #cdeb8e 0%, #a5c956 100%);
+			}
+		}
+}
+.social {
+	display: flex;
+	& img {
+		width: 100%;
+		max-width: 4.4rem;
+		height: auto;
+		margin-right: $font-size-10px;
+	}
+}

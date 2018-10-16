@@ -1,0 +1,124 @@
+@import "params/variables";
+
+@media screen and (max-width: 1300px) {}
+@media screen and (max-width: 1160px) {
+	.all {
+		& .content-menu {
+			& .tab-content {
+				& .tab {
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 1300px) {}
+@media screen and (max-width: 1300px) {}
+@media screen and (max-width: 960px) {
+	body {
+		font-size: 14px;
+	}
+}
+@media screen and (max-width: 1300px) {}
+@media screen and (max-width: 780px) {
+	body {
+		font-size: 12px;
+	}
+	.all {
+		& .header {
+			flex-direction: column;
+			& .logo, & .contacts {
+				align-self: center;
+			}
+		}
+		& .menu-wrapper {
+			& .menu {
+				display: flex;
+				flex-direction: column;
+				height: 100%;
+				& .hamburger {
+					display: block;
+				}
+				& .menu-ul, & .buttons{
+					display: none;
+					flex-direction: column;
+				}
+				& .menu-ul {
+					& .menu-li {
+						display: inline-flex;
+						margin-top: .5em;
+						margin-bottom: .5em;
+						&.active {
+							& span {
+								border-radius: $font-size-10px;
+								margin-top: 0;
+								padding: $font-size-12px $font-size-14px;
+								position: relative;
+								&::after, &::before {
+									box-shadow: none;
+									background: transparent;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		& .tab-content-wrapper {
+			margin-top: 1em;
+		}
+		& .registration {
+			& .login, & .email {
+				& form {
+					justify-content: center;
+				}
+			}
+			& .social {
+				text-align: center;
+			}
+		}
+	}
+}
+@media screen and (max-width: 560px) {
+	body {
+		font-size: 10px;
+	}
+	.all {
+		& .content-menu {
+			& .slider-wrapper {
+				padding: 0;
+				& .owl-carousel {
+					& .owl-dots {
+						display: none;
+					}
+				}
+			}
+		}
+		& .registration {
+			& .login, & .email {
+				& form {
+					flex-direction: column;
+					justify-content: center;
+					& .login-name, & .password, & .address {
+						width: 100%;
+						max-width: 100% !important;
+						margin-right: 0;
+						margin-bottom: 1em;
+					}
+				}
+			}
+			& .social-btn {
+				margin-bottom: 1em;
+			}
+		}
+	}
+}
+@media screen and (max-width: 300px) {
+	.all {
+		& .registration {
+			& .social-btn {
+				font-size: 5px;
+				margin-bottom: 1em;
+			}
+		}
+	}
+}

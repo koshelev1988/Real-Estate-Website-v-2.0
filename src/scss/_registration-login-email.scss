@@ -1,0 +1,64 @@
+@import "params/variables";
+@import "params/mixins";
+
+& .login, .email {
+	border: .1rem solid $color-white;
+	background: linear-gradient(360deg, rgb(135, 224, 253) 0%, rgb(83, 203, 241) 40%, rgb(5, 171, 224) 100%);
+	-webkit-border-radius: $font-size-6px;
+	-moz-border-radius: $font-size-6px;
+	border-radius: $font-size-6px;
+	color: $color-white;
+	padding: 1em $font-size-24px $font-size-8px;
+	margin-bottom: $font-size-30px;
+	& span {
+		font-size: $font-size-24px;
+		//margin-left: $font-size-32px;
+	}
+	& .form-login, .form-email{
+		padding: $font-size-22px 0;
+
+		& .logil-name, .password, .address {
+			-webkit-border-radius: .5rem;
+			-moz-border-radius: .5rem;
+			border-radius: .5rem;
+			//margin: $font-size-10px $font-size-10px $font-size-6px $font-size-10px;
+			//padding: $font-size-8px $font-size-8px $font-size-6px;
+			//margin-bottom: 1em;
+			outline: none;
+		}
+	}
+}
+& .login {
+	& .form-login {
+		display: flex;
+		& .button {
+			font-size: 1em;
+			padding: $font-size-6px $font-size-18px;
+			margin: 0;
+			outline: none;
+		}
+		& .login-name, .password {
+			width: 100%;
+			max-width: 15rem;
+			padding: $font-size-6px;
+			margin-right: 1em;
+		}
+	}
+}
+& .email {
+	& .form-email {
+		display: flex;
+		& .button {
+			font-size: 1em;
+			padding: $font-size-6px 1em;
+			margin: 0;
+			outline: none;
+		}
+		& .address {
+			width: 100%;
+			max-width: 33.4rem;
+			padding: $font-size-6px;
+			margin-right: 1em;
+		}
+	}
+}

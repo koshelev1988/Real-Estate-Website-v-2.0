@@ -1,0 +1,50 @@
+@import "params/variables";
+@import "params/mixins";
+
+.footer {
+	background: #4b83a6;
+	& li {
+		line-height: 1.5;
+		font-weight: 300;
+	}
+	& .costamer {
+		& .meta {
+			display: flex;
+			& .title {
+				margin-right: 2rem;
+			}
+			& .icon {
+				margin-top: 1.33em;
+				margin-right: $font-size-14px;
+			}
+		}
+		& p {
+			line-height: 1.5;
+			margin: 0;
+			font-weight: 300;
+		}
+		& li {
+			font-weight: 700;
+		}
+		& ul {
+			margin: 0;
+		}
+	}
+	& .logo {
+		margin: $font-size-20px 0;
+		& .wrap {
+			margin-bottom: 2.5em;
+			& img {
+				width: $font-size-30px;
+				height: $font-size-30px;
+			}
+			& .title {
+				top: 0.875em;
+				left: 1.125em;
+				& .name {
+					font-size: 1.0825em;
+				}
+			}
+		}
+	}
+}

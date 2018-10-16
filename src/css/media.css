@@ -1,0 +1,143 @@
+@media screen and (max-width: 960px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  body {
+    font-size: 12px;
+  }
+
+  .all .header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .all .header .logo,
+  .all .header .contacts {
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+  }
+
+  .all .menu-wrapper .menu {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .all .menu-wrapper .menu .hamburger {
+    display: block;
+  }
+
+  .all .menu-wrapper .menu .menu-ul,
+  .all .menu-wrapper .menu .buttons {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .all .menu-wrapper .menu .menu-ul .menu-li {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    margin-top: .5em;
+    margin-bottom: .5em;
+  }
+
+  .all .menu-wrapper .menu .menu-ul .menu-li.active span {
+    -webkit-border-radius: 0.625em;
+    border-radius: 0.625em;
+    margin-top: 0;
+    padding: 0.75em 0.875em;
+    position: relative;
+  }
+
+  .all .menu-wrapper .menu .menu-ul .menu-li.active span::after,
+  .all .menu-wrapper .menu .menu-ul .menu-li.active span::before {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background: transparent;
+  }
+
+  .all .tab-content-wrapper {
+    margin-top: 1em;
+  }
+
+  .all .registration .login form,
+  .all .registration .email form {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .all .registration .social {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  body {
+    font-size: 10px;
+  }
+
+  .all .content-menu .slider-wrapper {
+    padding: 0;
+  }
+
+  .all .content-menu .slider-wrapper .owl-carousel .owl-dots {
+    display: none;
+  }
+
+  .all .registration .login form,
+  .all .registration .email form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .all .registration .login form .login-name,
+  .all .registration .login form .password,
+  .all .registration .login form .address,
+  .all .registration .email form .login-name,
+  .all .registration .email form .password,
+  .all .registration .email form .address {
+    width: 100%;
+    max-width: 100% !important;
+    margin-right: 0;
+    margin-bottom: 1em;
+  }
+
+  .all .registration .social-btn {
+    margin-bottom: 1em;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .all .registration .social-btn {
+    font-size: 5px;
+    margin-bottom: 1em;
+  }
+}
